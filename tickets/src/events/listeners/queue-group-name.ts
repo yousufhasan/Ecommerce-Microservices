@@ -1,0 +1,1 @@
+export const TICKET_SVC_QUEUE_GROUP = 'ticket-service';

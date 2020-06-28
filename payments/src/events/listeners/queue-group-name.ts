@@ -1,0 +1,1 @@
+export const PAYMENTS_SVC_QUEUE_GROUP = 'payments-service';

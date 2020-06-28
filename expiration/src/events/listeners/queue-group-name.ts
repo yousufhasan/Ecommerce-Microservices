@@ -1,0 +1,1 @@
+export const EXPIRATION_SVC_QUEUE_GROUP = 'expiration-service';

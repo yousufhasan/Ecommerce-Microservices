@@ -1,0 +1,1 @@
+export const ORDER_SVC_QUEUE_GROUP = 'order-service';

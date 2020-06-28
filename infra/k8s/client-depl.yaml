@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: client-depl
+spec:
+    replicas: 1
+    selector:
+        matchLabels:
+            app: client
+    template:
+        metadata:
+            labels:
+                app: client
+        spec:
+            containers:
+                - name: client
+                  image: gcr.io/ticketing-dev-280112/client
+                  env:
+                    - name: JWT_KEY
+                      valueFrom:
+                        secretKeyRef:
+                            name: jwt-secret
+                            key: JWT_KEY
+                    - name: STRIPE_PUBLIC_KEY
+                      value: 'pk_test_51GyExFK5rkC3kVbkVEn4kKO6XxNaZl64TF6lYzawR02QxvkFwN7KhPzS9SdwaiC8CPwQGbitL7Sk71kiXWeF2sMl00P3mIVXAj'
+---
+
+apiVersion: v1
+kind: Service
+metadata: 
+    name: client-srv
+spec:
+    selector:
+        app: client
+    ports:
+        - name: client
+          protocol: TCP
+          port: 3000
+          targetPort: 3000
