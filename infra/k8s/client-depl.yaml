@@ -23,6 +23,8 @@ spec:
                             key: JWT_KEY
                     - name: STRIPE_PUBLIC_KEY
                       value: 'pk_test_51GyExFK5rkC3kVbkVEn4kKO6XxNaZl64TF6lYzawR02QxvkFwN7KhPzS9SdwaiC8CPwQGbitL7Sk71kiXWeF2sMl00P3mIVXAj'
+                    - name: INGRESS_SRV
+                      value: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local'
 ---
 
 apiVersion: v1
