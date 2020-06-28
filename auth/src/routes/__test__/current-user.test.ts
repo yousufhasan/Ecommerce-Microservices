@@ -10,7 +10,7 @@ describe('CurrentUser Route', () => {
         .send()
         .expect(200)
 
-        expect(response.body.currentUser.email).toEqual('test5@test.com')
+        expect(response.body.currentUser.email).toEqual('test@test.com')
 
     });
 
