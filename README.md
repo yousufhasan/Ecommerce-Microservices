@@ -1,8 +1,8 @@
 # A Microservices based Ecommerce Application
 
-A multi Microservice based end to end professional grade scalable application with automatic CI/CD.
+A Microservice based end to end professional grade scalable application with automatic CI/CD. I created this application as part of Udemy Course by Stephen grider called "Microservices with Node JS and React"
 
-# Features Tech Stack
+# Features and Tech Stack
 
   -  Each service is created using Node and Express with code written using TypeScript.
   -  NATS Streaming Server is being used to communicate between services.
