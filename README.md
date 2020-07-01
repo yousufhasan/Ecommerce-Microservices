@@ -1,6 +1,6 @@
 # A Microservices based Ecommerce Application
 
-A Microservice based end to end professional grade scalable application with automatic CI/CD. I created this application as part of Udemy Course by Stephen grider called "Microservices with Node JS and React"
+A Microservice based end to end professional grade scalable application with CI/CD. I created this application as part of Udemy Course by Stephen grider called "Microservices with Node JS and React"
 
 # Features and Tech Stack
 
